@@ -1,4 +1,6 @@
 FROM nginx:stable-alpine
-COPY ./www /usr/share/nginx/html
+LABEL autor=SwarG
+WORKDIR /usr/share/nginx/html/
+COPY www/index.html .
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
