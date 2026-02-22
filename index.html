@@ -45,6 +45,16 @@
 
       <p>Настя, я тебя люблю! Очень, очень!</p>
       <p>Слава, учи Python, срочно!!!</p>
+      <p> А вот так устанавливаем Git Lab
+      docker run --detach \
+      --hostname gitlab.example.com \
+      --publish 443:443 --publish 80:80 --publish 22:22 \
+      --name gitlab \
+      --restart always \
+      --volume /srv/gitlab/config:/etc/gitlab \
+      --volume /srv/gitlab/logs:/var/log/gitlab \
+      --volume /srv/gitlab/data:/var/opt/gitlab \
+      gitlab/gitlab-ce:latest</p>
     </footer>
     <!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
   </body>
