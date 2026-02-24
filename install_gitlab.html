@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>swargg.ru</title>
+    <title>swargg.ru - install gitlab</title>
     <link rel="stylesheet" href="./styles/style.css">
 
     <meta property="og:title" content="Заголовок страницы в OG">
@@ -13,21 +13,30 @@
   </head>
   <body>
     <header>
-      <h1>Личный сайт SwarG</h1>
-      <p>Который сделан!</p>
+      <h1>Установка Гитлаба</h1>
+      
       <nav>
         <ul>
-        <li><a href="install_gitlab.html">Установка gitlab</a></li>
+          <li><a href="index.html">Домашняя страница</a></li>
+          <li><a href="catalog.html">Другая страница</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <article>
         <section>
-          <h2>Первая секция</h2>
-          <p>Она обо мне</p>
-          <img src="images/image.png" alt="Человек и пароход">
-          <p>Но может быть и о семантике, я пока не решил.</p>
+          <h2>Установка</h2>
+          <p>вот так:</p>
+           <p> А вот так устанавливаем Git Lab</p>
+            <p>docker run --detach \</p>
+            <p>--hostname gitlab.example.com \</p>
+            <p>--publish 443:443 --publish 80:80 --publish 22:22 \</p>
+            <p>--name gitlab \</p>
+            <p>--restart always \</p>
+            <p>--volume /srv/gitlab/config:/etc/gitlab \</p>
+            <p>--volume /srv/gitlab/logs:/var/log/gitlab \</p>
+            <p>--volume /srv/gitlab/data:/var/opt/gitlab \</p>
+            <p>gitlab/gitlab-ce:latest</p>
         </section>
         <section>
           <h2>Вторая секция</h2>
@@ -40,20 +49,8 @@
       </article>
     </main>
     <footer>
-      <p>Сюда бы я вписал информацию об авторе и ссылки на другие сайты</p>
-
-      <p>Настя, я тебя люблю! Очень, очень!</p>
-      <p>Слава, учи Python, срочно!!!</p>
-      <p> А вот так устанавливаем Git Lab
-      docker run --detach \
-      --hostname gitlab.example.com \
-      --publish 443:443 --publish 80:80 --publish 22:22 \
-      --name gitlab \
-      --restart always \
-      --volume /srv/gitlab/config:/etc/gitlab \
-      --volume /srv/gitlab/logs:/var/log/gitlab \
-      --volume /srv/gitlab/data:/var/opt/gitlab \
-      gitlab/gitlab-ce:latest</p>
+      <p>Ссылки:</p>
+      
     </footer>
     <!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
   </body>
