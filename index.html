@@ -14,46 +14,39 @@
   <body>
     <header>
       <h1>Личный сайт SwarG</h1>
-      <p>Который сделан!</p>
+      <p>Который развернут на Linux-сервере с помощью Ansible в Docker-контейнере и обновляется через gitlab CI/CD</p>
       <nav>
         <ul>
-        <li><a href="install_gitlab.html">Установка gitlab</a></li>
+        
         </ul>
       </nav>
     </header>
     <main>
       <article>
         <section>
-          <h2>Первая секция</h2>
-          <p>Она обо мне</p>
+          <h2>Основная информация/h2>
+          <p>О проекте:</p>
           <img src="images/image.png" alt="Человек и пароход">
-          <p>Но может быть и о семантике, я пока не решил.</p>
+          <p>Как-то так.</p>
         </section>
         <section>
-          <h2>Вторая секция</h2>
-          <p>Она тоже обо мне</p>
+          <h2>Переменные данные</h2>
+          <p>про всё</p>
         </section>
         <section>
-          <h2>И третья</h2>
-          <p>Вы уже должны были начать догадываться.</p>
+          <h2>Ссылки</h2>
+          <p></p>
+          <li><a href="install_gitlab.html">Установка gitlab</a></li>
         </section>
       </article>
     </main>
     <footer>
-      <p>Сюда бы я вписал информацию об авторе и ссылки на другие сайты</p>
+
+      <p>ЗЫ:</p>
 
       <p>Настя, я тебя люблю! Очень, очень!</p>
       <p>Слава, учи Python, срочно!!!</p>
-      <p> А вот так устанавливаем Git Lab
-      docker run --detach \
-      --hostname gitlab.example.com \
-      --publish 443:443 --publish 80:80 --publish 22:22 \
-      --name gitlab \
-      --restart always \
-      --volume /srv/gitlab/config:/etc/gitlab \
-      --volume /srv/gitlab/logs:/var/log/gitlab \
-      --volume /srv/gitlab/data:/var/opt/gitlab \
-      gitlab/gitlab-ce:latest</p>
+      
     </footer>
     <!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
   </body>
