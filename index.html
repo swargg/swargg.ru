@@ -1,5 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <style type="text/css">
+   .space 
+    { 
+    padding: 20px; /* Поля */
+    background: #E5D3BD; /* Цвет фона */
+    border: 2px solid #E81E25; /* Параметры рамки */
+    }
+  </style>
+  <style type="text/css">
+   header
+    { 
+    padding: 20px; /* Поля */
+    background: #24568f; /* Цвет фона */
+    border-bottom: 2px solid #0f0f0f; /* Параметры рамки */
+    margin-bottom: 5pt;
+    }
+  </style>
+  <style type="text/css">
+      P.line 
+      {
+      border-left: 1px dotted red;
+      padding: 10px;
+      }
+  </style>
+  <style type="text/css">
+      article
+      {
+      border-left: 1px dotted red;
+      padding: 10px;
+      }
+  </style>
+  <style>
+   aside 
+   {
+    
+    background: #c4c2c2;
+    padding: 10px;
+    width: 200px;
+    float: left;
+    margin-right: 5pt;
+   }
+  </style>
+  <style>
+   main
+   {
+    
+    background: #c4c2c2;
+    padding-left:230px;
+    
+    
+   }
+  </style>
+  <style>
+   footer
+   {
+    margin-top: 5pt;
+    margin-right: 5pt;
+    
+    background: #cc864c;
+    padding:10px;
+    float: left;
+    width: 98%;
+   }
+  </style>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +75,21 @@
     <meta property="og:image" content="https://example.com/image.jpg">
     <meta property="og:url" content="https://example.com/">
   </head>
-  <body>
+  <body bgcolor="lightblue">
     <header>
-    <div>  
-    <h1>Личный сайт SwarG</h1>
-    <p>Который развернут на Linux-сервере с помощью Ansible в Docker-контейнере и обновляется через gitlab CI/CD</p>
-    </div>
+    
+    <h1 align="center">Личный сайт SwarG</h1>
+    <p align="center">Который развернут на Linux-сервере с помощью Ansible в Docker-контейнере и обновляется через gitlab CI/CD</p>
+    
   </header>
-    <main>
-      <article>
+  <aside>
+    Другие страницы:
+      <p><a href="install_gitlab.html">Установка gitlab</a></p>
+  </aside>
+
+  <main>
+    <article>
+      <div class=".line">
         <section>
           <h2>Основная информация</h2>
           <p>О проекте:</p>
@@ -29,6 +99,8 @@
         <section>
           <h2>Переменные данные</h2>
           <p>про всё</p>
+          <p class="line">Лев ревет только в том случае, когда сообщает, что 
+  территория принадлежит ему или провозглашает себя царем природы.</p>
             <div style="flex: 1; background-color: lightblue;">Часть 1</div>
             <div style="display: flex;">
               <div style="flex: 1; background-color: lightgreen;">Часть 2</div>
@@ -37,18 +109,21 @@
         <section>
           <h2>Ссылки</h2>
           
-          <li><a href="install_gitlab.html">Установка gitlab</a></li>
+          
         </section>
-      </article>
-    </main>
-    <footer>
+      </div>
+    </article>
+  </main>
+  
+  <footer>
 
       <p>ЗЫ:</p>
-
+        
       <p>Настя, я тебя люблю! Очень, очень!!</p>
       <p>Слава, учи Python, срочно!!!</p>
       
-    </footer>
+  </footer>
+
     <!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
   </body>
 </html>
